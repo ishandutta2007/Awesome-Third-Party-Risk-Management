@@ -40,63 +40,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[ProcessUnity](https://www.processunity.com/)**  
-
-  Highly configurable enterprise TPRM platform focused on vendor lifecycle workflows, assessments, and risk management for large organizations.
-
-
-
-- **[OneTrust](https://www.onetrust.com/)**  
-
-  Broad GRC and privacy platform with strong third-party risk modules covering questionnaires, continuous monitoring, and compliance workflows.
-
-
-
-- **[SecurityScorecard](https://securityscorecard.com/)**  
-
-  Security ratings and continuous monitoring platform that provides portfolio-level cyber risk visibility into third parties.
-
-
-
-- **[BitSight](https://www.bitsight.com/)**  
-
-  Leading security ratings provider used for continuous third-party cyber risk monitoring and TPRM programs, especially in financial services.
-
-
-
-- **[Whistic](https://www.whistic.com/)**  
-
-  Vendor assessment and trust-exchange platform that streamlines security questionnaires and evidence sharing.
-
-
-
-- **[Panorays](https://panorays.com/)**  
-
-  Hybrid platform combining security assessments with attack-surface and external monitoring for third-party risk.
-
-
-
-- **[UpGuard](https://www.upguard.com/)**  
-
-  Third-party risk and external attack-surface monitoring platform with ratings, questionnaires, and vendor risk workflows.
-
-
-
-- **[Black Kite](https://blackkite.com/)**  
-
-  Cyber risk rating and intelligence platform focused on continuous monitoring of third-party security posture.
-
-
-
-- **[Prevalent](https://www.prevalent.net/)**  
-
-  Third-party risk management platform covering vendor assessments, continuous monitoring, and risk intelligence.
-
-
-
-- **[Venminder](https://www.venminder.com/)**  
-
-  Vendor risk management solution popular with financial institutions for due diligence, ongoing monitoring, and oversight.
+| Platform | Description | Starting Price | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[ProcessUnity](https://www.processunity.com/)** | Highly configurable enterprise TPRM platform focused on vendor lifecycle workflows, assessments, and risk management for large organizations. | Starts at ~$25,000/year (Custom quote based on modules and vendor count) | No general free trial/tier; Free access only to DDQ AutoAssist on Global Risk Exchange for third parties to draft questionnaire responses. |
+| **[OneTrust](https://www.onetrust.com/)** | Broad GRC and privacy platform with strong third-party risk modules covering questionnaires, continuous monitoring, and compliance workflows. | Starts at ~$10,000/year (~$11,500/year median spend; modular pricing scaled by admin users and vendor volume) | No full platform free trial/tier (demo only); Free standalone utility tools available (e.g. cookie banner gallery, CCPA opt-out builder). |
+| **[SecurityScorecard](https://securityscorecard.com/)** | Security ratings and continuous monitoring platform that provides portfolio-level cyber risk visibility into third parties. | Starts at ~$13,500/year (Business Tier covering 5 domains on AWS Marketplace; Enterprise tiers scale to $25,000–$155,000+/year) | Free-forever plan for self-monitoring own domain & responding to questionnaires; 14-day free trial for Business tier (monitors up to 5 third-party companies). |
+| **[BitSight](https://www.bitsight.com/)** | Leading security ratings provider used for continuous third-party cyber risk monitoring and TPRM programs, especially in financial services. | Starts at ~$23,000–$25,000/year (Contract-based pricing scaling with entity count, typically 1–50 vendors in entry tier) | No free trial of core platform; Free forever Trust Management Hub (TMH) account for managing/sharing security questionnaires + complimentary one-time Cyber Risk Report. |
+| **[Whistic](https://www.whistic.com/)** | Vendor assessment and trust-exchange platform that streamlines security questionnaires and evidence sharing. | Starts at ~$12,700–$20,625/year (Average annual spend; tiered based on Core/Pro/Enterprise and assessment volume) | Free Basic Profile forever for vendors to publish & share trust documentation; 30-day free trial for Compliance Automation module. |
+| **[Panorays](https://panorays.com/)** | Hybrid platform combining security assessments with attack-surface and external monitoring for third-party risk. | Starts at ~$30,000/year (Deployments scale up to $150,000+/year based on vendor volume and assessment frequency) | Free Starter Plan / Trust Center forever (monitor own posture + up to 5 third-party vendors & basic questionnaire templates); 14-day free trial for advanced platform capabilities (no credit card required). |
+| **[UpGuard](https://www.upguard.com/)** | Third-party risk and external attack-surface monitoring platform with ratings, questionnaires, and vendor risk workflows. | Starts at $1,750/month ($21,000/year billed annually; additional vendors at ~$79/month each) | Free forever plan allowing monitoring of up to 5 vendors + Trust Exchange AI questionnaire tools; 14-day full feature free trial. |
+| **[Black Kite](https://blackkite.com/)** | Cyber risk rating and intelligence platform focused on continuous monitoring of third-party security posture. | Starts at ~$15,000–$20,000/year (Annual subscription scaled by number of monitored vendors and modules: Monitor, Assess, Extend) | No free tier or self-service free trial; interactive/guided proof-of-concept demo available upon request. |
+| **[Prevalent](https://www.prevalent.net/)** | Third-party risk management platform covering vendor assessments, continuous monitoring, and risk intelligence. | Starts at ~$15,000/year (Enterprise contracts scale to $50,000–$200,000+ based on vendor volume and managed services) | No free tier or standard self-service free trial; guided pilot/demo available upon request. |
+| **[Venminder](https://www.venminder.com/)** | Vendor risk management solution popular with financial institutions for due diligence, ongoing monitoring, and oversight. | Starts at ~$15,000–$25,000/year (Software tiers scale up to $125,000+/year based on vendor assessments and Venmonitor feeds) | Free forever account for the Venminder Exchange directory (search & purchase individual control assessments); Software platform is demo-only with no general free trial/tier. |
 
 
 
