@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19">
+        <animate attributeName="stop-color" values="#0b0f19;#111827;#0f172a;#0b0f19" dur="12s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#111827">
+        <animate attributeName="stop-color" values="#111827;#1e1b4b;#111827;#1e1b4b" dur="12s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0f172a">
+        <animate attributeName="stop-color" values="#0f172a;#0b0f19;#1e1b4b;#0f172a" dur="12s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Glowing Shield Gradient -->
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.3" />
+      <circle cx="40" cy="0" r="1" fill="#38bdf8" fill-opacity="0.4" />
+    </pattern>
+
+    <!-- Drop Shadows and Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="pulse-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur">
+        <animate attributeName="stdDeviation" values="8;16;8" dur="4s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 44px; fill: #ffffff; letter-spacing: -0.5px; }
+    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 19px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; letter-spacing: 0.8px; }
+    .pill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #cbd5e1; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#cyber-grid)" />
+
+  <!-- Animated Ambient Floating Nodes -->
+  <g opacity="0.6">
+    <circle cx="150" cy="80" r="3" fill="#38bdf8">
+      <animate attributeName="cy" values="80;70;80" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1020" cy="110" r="4" fill="#818cf8">
+      <animate attributeName="cy" values="110;125;110" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1100" cy="260" r="3" fill="#c084fc">
+      <animate attributeName="cy" values="260;245;260" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80" cy="280" r="3.5" fill="#38bdf8">
+      <animate attributeName="cy" values="280;295;280" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="7s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Left Tech Visual: Shield & Connected Vendor Network -->
+  <g transform="translate(100, 70)">
+    <!-- Connected Vendor Nodes Line -->
+    <path d="M 60 110 L 0 50 M 60 110 L 0 170 M 60 110 L 120 50 M 60 110 L 120 170" stroke="#475569" stroke-dasharray="3,3" stroke-width="1.5" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="0;24" dur="3s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Satellite Nodes (Vendors) -->
+    <g transform="translate(0, 50)">
+      <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="0" cy="0" r="5" fill="#38bdf8" />
+    </g>
+    <g transform="translate(0, 170)">
+      <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#818cf8" stroke-width="2" />
+      <circle cx="0" cy="0" r="5" fill="#818cf8" />
+    </g>
+    <g transform="translate(120, 50)">
+      <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#a855f7" stroke-width="2" />
+      <circle cx="0" cy="0" r="5" fill="#a855f7" />
+    </g>
+    <g transform="translate(120, 170)">
+      <circle cx="0" cy="0" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="0" cy="0" r="5" fill="#38bdf8" />
+    </g>
+
+    <!-- Central Security Shield -->
+    <g transform="translate(60, 110)" filter="url(#glow)">
+      <!-- Animated Pulse Ring -->
+      <circle cx="0" cy="0" r="38" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4">
+        <animate attributeName="r" values="30;52;30" dur="3.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;0;0.6" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+
+      <!-- Shield Base -->
+      <path d="M 0 -30 L 25 -15 C 25 15 0 35 0 35 C 0 35 -25 15 -25 -15 Z" fill="url(#shield-grad)" stroke="#ffffff" stroke-width="2" filter="url(#pulse-glow)" />
+      <!-- Checkmark in shield -->
+      <path d="M -9 1 L -2 8 L 10 -4" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- Content Section -->
+  <g transform="translate(320, 75)">
+    <!-- Top Category Pill -->
+    <rect x="0" y="0" width="310" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="16" cy="14" r="5" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="19" class="badge-text">THIRD-PARTY RISK MANAGEMENT (TPRM)</text>
+
+    <!-- Main Title -->
+    <text x="0" y="72" class="title-text">Awesome TPRM &amp; VRM</text>
+
+    <!-- Accent Underline -->
+    <rect x="0" y="88" width="460" height="3" rx="1.5" fill="url(#accent-grad)" />
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="125" class="subtitle-text">Curated Security Ratings, Vendor Assessments &amp; GRC Solutions</text>
+
+    <!-- Tag Pills / Tech Bubbles -->
+    <g transform="translate(0, 155)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="145" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.2" />
+      <text x="14" y="21" class="pill-text">🛡️ Vendor Risk (VRM)</text>
+
+      <!-- Pill 2 -->
+      <rect x="155" y="0" width="165" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-opacity="0.5" stroke-width="1.2" />
+      <text x="169" y="21" class="pill-text">📊 Security Ratings</text>
+
+      <!-- Pill 3 -->
+      <rect x="330" y="0" width="175" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-opacity="0.5" stroke-width="1.2" />
+      <text x="344" y="21" class="pill-text">📝 Due Diligence &amp; SIG</text>
+
+      <!-- Pill 4 -->
+      <rect x="515" y="0" width="170" height="32" rx="16" fill="#1e293b" stroke="#22c55e" stroke-opacity="0.5" stroke-width="1.2" />
+      <text x="529" y="21" class="pill-text">⚡ Open Source GRC</text>
+    </g>
+  </g>
+
+  <!-- Right Decorative Network Chart / Radar -->
+  <g transform="translate(1070, 180)" opacity="0.75">
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="#475569" stroke-width="1" />
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="none" stroke="#475569" stroke-width="1" />
+    <polygon points="0,-20 17,-10 17,10 0,20 -17,10 -17,-10" fill="none" stroke="#475569" stroke-width="1" />
+    
+    <!-- Dynamic Radar Risk Scan Polygon -->
+    <polygon points="0,-48 42,-15 28,26 -5,35 -40,10" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.8">
+      <animate attributeName="points" 
+        values="0,-48 42,-15 28,26 -5,35 -40,10; 0,-35 48,-25 38,18 0,45 -30,22; 0,-48 42,-15 28,26 -5,35 -40,10" 
+        dur="6s" repeatCount="indefinite" />
+    </polygon>
+
+    <!-- Radar Line -->
+    <line x1="0" y1="0" x2="0" y2="-60" stroke="#818cf8" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite" />
+    </line>
+  </g>
+</svg>
